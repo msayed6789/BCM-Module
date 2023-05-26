@@ -52,7 +52,6 @@ void app_start(void)
 	bcm_send_End_Setcallback(BCM_Send_End);
 	bcm_recieve_Non_Blocking(str2);
 	bcm_recieve_End_Setcallback(BCM_recieve_End);
-	u16 f=0;
 	while(1)
 	{
 		uart_bcm_send_dispatcher();
